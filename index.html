@@ -1,228 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Its Gaurav 23 : Portfolio</title>
     <style>
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .category-title {
-            font-weight: bold;
-            margin-top: 20px;
-        }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .category-title {
+        font-weight: bold;
+        margin-top: 20px;
+      }
     </style>
-    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Ficon.jpg?alt=media&token=15f81e98-fd4c-4721-b071-2d43a8b8a036" type="image/x-icon">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fstyle.css?alt=media&token=c36ab6dc-c9c5-430f-917a-67486226ea52"> 
-</head>
-<body class="light-theme">
+    <link
+      rel="icon"
+      href="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Ficon.jpg?alt=media&token=15f81e98-fd4c-4721-b071-2d43a8b8a036"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fstyle.css?alt=media&token=c36ab6dc-c9c5-430f-917a-67486226ea52"
+    />
+  </head>
+  <body class="light-theme">
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <span class="fs-4" style="text-align: center;">Portfolio</span><br>
-            </a>
-            <ul class="nav nav-pills">
-                 <li class="nav-item"><a href="#home" class="nav-link" onclick="showSection('home')">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link" onclick="showSection('about')">About</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link" onclick="showSection('projects')">Projects</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link" onclick="showSection('contact')">Contact</a></li>
-            </ul>
-            <button class="btn btn-primary" id="theme-toggle">   </button>
-        </header>
-        <br><br><br>
-        <main>
-            <section id="home" class="section active">
-                <img src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fgaurav.jpg?alt=media&token=821a85fb-319a-4ee0-b9e1-50ea48d67e98" class="my-pic">
-                <br><br>
-                <h1>Hi, I'm Gaurav Prajapati</h1>
-                <p>Freelance Web Developer</p>
-                <br>
-                <a href="#contact" class="c-form" onclick="showSection('contact')">Wanna Hire me</a>
-                <br>
-                <br>
-                <br>
-                <section class="quote">
-                <p><b>
-                    "Programming is an art form that fights back. It challenges you, pushes your boundaries, and demands precision. Code is like humor—if you have to explain it, it’s bad. Craft it well, and it speaks volumes on its own." </b> – Cory House
-                </p>
-                </section>
-            </section>
-            <section id="about" class="section">
-                <br>
-                <h2>About Me</h2>
-                <p>As a dedicated and passionate freelance web developer, I bring over [2] years of experience in creating websites. My journey in web development began with in search of learning new things and explore the things as much as I can. Since then, I have honed my skills in front-end HTML5, CSS, JavaScript, Python, Shell Scripting, Linux.</p>
-                <p>
-                    I pride myself on my ability to transform complex requirements into elegant, functional websites that not only meet but exceed client expectations. My expertise spans a wide range of industries, allowing me to deliver customized solutions that align with the unique goals and brand identities of my clients.
-                </p>
-                <p>
-                    Collaboration and communication are at the heart of my work process. I prioritize understanding my clients' vision and objectives, maintaining transparency throughout the development process, and delivering projects on time and within budget. Whether you're looking to build a new website from scratch, revamp an existing site, or develop a complex web application, I am here to help bring your digital vision to life.
-                </p>
-                <br>
-                <h2>Skills</h2>
-                <div>
+      <header
+        class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="
+            d-flex
+            align-items-center
+            mb-3 mb-md-0
+            me-md-auto
+            text-dark text-decoration-none
+          "
+        >
+          <span class="fs-4" style="text-align: center">Portfolio</span><br />
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" onclick="showSection('home')"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" onclick="showSection('about')"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#projects"
+              class="nav-link"
+              onclick="showSection('projects')"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" onclick="showSection('contact')"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button class="btn btn-primary" id="theme-toggle"></button>
+      </header>
+      <br /><br /><br />
+      <main>
+        <br /><br />
+        <section id="home" class="section active">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fgaurav.jpg?alt=media&token=821a85fb-319a-4ee0-b9e1-50ea48d67e98"
+            class="my-pic"
+          />
+          <br /><br />
+          <h1>Hi, I'm Gaurav Prajapati</h1>
+          <p>Freelance Web Developer</p>
+          <br />
+          <a href="#contact" class="c-form" onclick="showSection('contact')"
+            >Wanna Hire me</a
+          >
+          <br />
+          <br />
+          <br />
+          <section class="quote">
+            <p>
+              <b>
+                "Programming is an art form that fights back. It challenges you,
+                pushes your boundaries, and demands precision. Code is like
+                humor—if you have to explain it, it’s bad. Craft it well, and it
+                speaks volumes on its own."
+              </b>
+              – Cory House
+            </p>
+          </section>
+        </section>
+        <section id="about" class="section">
+          <br />
+          <h2>About Me</h2>
+          <p>
+            As a dedicated and passionate freelance web developer, I bring over
+            [2] years of experience in creating websites. My journey in web
+            development began with in search of learning new things and explore
+            the things as much as I can. Since then, I have honed my skills in
+            front-end HTML5, CSS, JavaScript, Python, Shell Scripting, Linux.
+          </p>
+          <p>
+            I pride myself on my ability to transform complex requirements into
+            elegant, functional websites that not only meet but exceed client
+            expectations. My expertise spans a wide range of industries,
+            allowing me to deliver customized solutions that align with the
+            unique goals and brand identities of my clients.
+          </p>
+          <p>
+            Collaboration and communication are at the heart of my work process.
+            I prioritize understanding my clients' vision and objectives,
+            maintaining transparency throughout the development process, and
+            delivering projects on time and within budget. Whether you're
+            looking to build a new website from scratch, revamp an existing
+            site, or develop a complex web application, I am here to help bring
+            your digital vision to life.
+          </p>
+          <br />
+          <h2>Skills</h2>
+          <div>
             <h5 class="category-title">Technical Skills</h5>
             <ul>
-                <li>Programming Languages: Python, JavaScript, C, Shell Script.</li>
-                <li>Web Development: HTML, CSS, Javascript</li>
-                <li>Version Control: Git, GitHub</li>
+              <li>
+                Programming Languages: Python, JavaScript, C, Shell Script.
+              </li>
+              <li>Web Development: HTML, CSS, Javascript</li>
+              <li>Version Control: Git, GitHub</li>
             </ul>
-        </div>
-        
-        <div>
+          </div>
+
+          <div>
             <h5 class="category-title">Software and Tools</h5>
             <ul>
-                <li>Development Environments: Visual Studio Code, Termux(Android), Linux</li>
+              <li>
+                Development Environments: Visual Studio Code, Termux(Android),
+                Linux
+              </li>
             </ul>
-        </div>
-        
-        <div>
+          </div>
+
+          <div>
             <h5 class="category-title">Professional Skills</h5>
             <ul>
-                <li>Problem-Solving</li>
-                <li>Project Management</li>
-                <li>Time Management</li>
+              <li>Problem-Solving</li>
+              <li>Project Management</li>
+              <li>Time Management</li>
             </ul>
-        </div>
-        
-        <div>
+          </div>
+
+          <div>
             <h5 class="category-title">Industry-Specific Skills</h5>
             <ul>
-                <li>UX/UI Design: Prototyping, User Research</li>
+              <li>UX/UI Design: Prototyping, User Research</li>
             </ul>
-        </div>
-        
-        <div>
+          </div>
+
+          <div>
             <h5 class="category-title">Soft Skills</h5>
             <ul>
-                <li>Communication</li>
-                <li>Team Collaboration</li>
-                <li>Adaptability</li>
+              <li>Communication</li>
+              <li>Team Collaboration</li>
+              <li>Adaptability</li>
             </ul>
-        </div>
-        
-        <div>
+          </div>
+
+          <div>
             <h5 class="category-title">Languages</h5>
             <ul>
-                <li>English (Native)</li>
-                <li>Hindi (Fluent)</li>
-                <li>Marathi (Fluent)</li>
+              <li>English (Native)</li>
+              <li>Hindi (Fluent)</li>
+              <li>Marathi (Fluent)</li>
             </ul>
-        </div>
-        
-            </section>
-            <section id="projects" class="section">
-                <h2>Projects</h2>
-                <br>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Neon AI (2022)</h5>
-                        <a href="https://github.com/thematrix09/Neon09">Repository</a>
-                        <p class="card-text">This Project is a Python based, made for Android.
-                        It is a AI Assistant based on linux app named Termux. Still Project is upgrading.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">The Matrix (2022)</h5>
-                        <a href="https://matrix0923gb.web.app">View</a>
-                        <p class="card-text">The website which I was create for the installation of required tools/softwares for FYBCS Students practical.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">P-SQL (2023)</h5>
-                        <a href="https://github.com/thematrix09/psql">Repository</a>
-                        <p class="card-text">A shell Script based project to Start or Install Postgres-Sql on linux environment app named Termux.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">CodeRC (2024)</h5>
-                        <a href="https://coderc-09.web.app">DSA Slips-I.</a><br>
-                        <a href="https://coderc-23.web.app">DSA Slips-II.</a><br>
-                        <a href="https://coderc-25.web.app">Maths Slips.</a><br>
-                        <p class="card-text">This is not a Single site. This Site was in 3 parts.
-                        I had Designed these website for distributing the Answers of Practical Examination Slips given us for practice.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">E-Library (2024)</h5>
-                        <a href="https://e-library-09.web.app">Open</a>
-                        <p class="card-text">I made this site for distributing the books PDF of TY BCS all over the class.
-                        Still in progress few more sections will be added soon in this site.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="contact" class="section">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto: gauravprajapati041@gmail.com">gauravprajapati041@gmail.com</a></p><br>
-            <section class="c-form">
-                <h2>Get in Touch</h2>
-                <form id="contact-form" action="https://formsubmit.co/c21b15b5a2c08ab4d77aea3a7d115fa2" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+          </div>
+        </section>
+        <section id="projects" class="section">
+          <h2>Projects</h2>
+          <br />
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Neon AI (2022)</h5>
+              <a href="https://github.com/thematrix09/Neon09">Repository</a>
+              <p class="card-text">
+                This Project is a Python based, made for Android. It is a AI
+                Assistant based on linux app named Termux. Still Project is
+                upgrading.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">The Matrix (2022)</h5>
+              <a href="https://matrix0923gb.web.app">View</a>
+              <p class="card-text">
+                The website which I was create for the installation of required
+                tools/softwares for FYBCS Students practical.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">P-SQL (2023)</h5>
+              <a href="https://github.com/thematrix09/psql">Repository</a>
+              <p class="card-text">
+                A shell Script based project to Start or Install Postgres-Sql on
+                linux environment app named Termux.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">CodeRC (2024)</h5>
+              <a href="https://coderc-09.web.app">DSA Slips-I.</a><br />
+              <a href="https://coderc-23.web.app">DSA Slips-II.</a><br />
+              <a href="https://coderc-25.web.app">Maths Slips.</a><br />
+              <p class="card-text">
+                This is not a Single site. This Site was in 3 parts. I had
+                Designed these website for distributing the Answers of Practical
+                Examination Slips given us for practice.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">E-Library (2024)</h5>
+              <a href="https://e-library-09.web.app">Open</a>
+              <p class="card-text">
+                I made this site for distributing the books PDF of TY BCS all
+                over the class. Still in progress few more sections will be
+                added soon in this site (until 2025).
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Code Formatter (2024)</h5>
+              <a href="https://codeformatter09.web.app">Visit</a>
+              <p class="card-text">
+                This is designed with the intention of increasing a readability
+                of code related to web development. Its like a tool for
+                formatting a code in proper way.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Code Viewer (2024)</h5>
+              <a href="https://codeviewer09.web.app">Visit</a>
+              <p class="card-text">
+                I designed this site to get source codes of any website. For
+                referring and study purpose.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="section">
+          <h2>Contact</h2>
+          <p>
+            Email:
+            <a href="mailto: gauravprajapati041@gmail.com"
+              >gauravprajapati041@gmail.com</a
+            >
+          </p>
+          <br />
+          <section class="c-form">
+            <h2>Get in Touch</h2>
+            <form
+              id="contact-form"
+              action="https://formsubmit.co/c21b15b5a2c08ab4d77aea3a7d115fa2"
+              method="POST"
+            >
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required />
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fthanku.html?alt=media&token=e1215c5f-5b51-4fda-a71e-1a8d0cbb692a">
-                    <input type="hidden" name="_template" value="table">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
 
-                    <button type="submit">Send Message</button> <br><br>
-                    <div id="response" class="response"></div>
-                </form>
-            </section>
-            <br>
-            <br>
-            <section class="contact-info">
-                <h2>Other Handels</h2>
-                <p>You can also reach us via the following platforms:</p>
-                <ul class="social-links">
-                    <li><a href="https://github.com/thematrix09" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-                    <li><a href="https://www.instagram.com/its_gaurav._.23?igsh=azIwNDY5emVsZmQx" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-                    <li><a href="mailto: gauravprajapati041@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/gaurav-prajapati-b08505259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fas fa-envelope"></i>LinkedIn</a></li>
-                </ul>
-            </section>
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fthanku.html?alt=media&token=e1215c5f-5b51-4fda-a71e-1a8d0cbb692a"
+              />
+              <input type="hidden" name="_template" value="table" />
+
+              <button type="submit">Send Message</button> <br /><br />
+              <div id="response" class="response"></div>
+            </form>
           </section>
-        </main>
-        </div>
-        <footer class="footer">
-            &copy; 2024 Gaurav Prajapati
-            <br>
-            <br>
-            <a href="https://github.com/thematrix09">
-        <img src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fgithub.png?alt=media&token=f82e01f1-f30f-4ce1-96a5-17eac24f3315">
-    </a>
-    <a href="https://www.instagram.com/its_gaurav._.23?igsh=azIwNDY5emVsZmQx">
-        <img src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Finsta.png?alt=media&token=6176bc4d-dfad-484b-86b3-5d91570f085e">
-    </a>
-    <a href="mailto:gauravprajapati041@gmail.com">
-        <img src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fgmail.png?alt=media&token=8154eb8f-77b6-4aa0-a1ed-12940b4d2d0d">
-    </a>
-    <a href="https://www.linkedin.com/in/gaurav-prajapati-b08505259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-        <img src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fin.png?alt=media&token=5da25603-d236-4046-852b-e53e578b9cee">
-    </a>
-            <br>
-            <br>
-        </footer>
+          <br />
+          <br />
+          <section class="contact-info">
+            <h2>Other Handels</h2>
+            <p>You can also reach us via the following platforms:</p>
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/thematrix09" target="_blank"
+                  ><i class="fab fa-github"></i>GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/its_gaurav._.23?igsh=azIwNDY5emVsZmQx"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i>Instagram</a
+                >
+              </li>
+              <li>
+                <a href="mailto: gauravprajapati041@gmail.com"
+                  ><i class="fas fa-envelope"></i>Email</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/gaurav-prajapati-b08505259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  ><i class="fas fa-envelope"></i>LinkedIn</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      &copy; 2024 Gaurav Prajapati
+      <br />
+      <br />
+      <a href="https://github.com/thematrix09">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fgithub.png?alt=media&token=f82e01f1-f30f-4ce1-96a5-17eac24f3315"
+        />
+      </a>
+      <a href="https://www.instagram.com/its_gaurav._.23?igsh=azIwNDY5emVsZmQx">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Finsta.png?alt=media&token=6176bc4d-dfad-484b-86b3-5d91570f085e"
+        />
+      </a>
+      <a href="mailto:gauravprajapati041@gmail.com">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fgmail.png?alt=media&token=8154eb8f-77b6-4aa0-a1ed-12940b4d2d0d"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/gaurav-prajapati-b08505259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      >
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fin.png?alt=media&token=5da25603-d236-4046-852b-e53e578b9cee"
+        />
+      </a>
+      <br />
+      <br />
+    </footer>
     <script src="https://firebasestorage.googleapis.com/v0/b/itsgaurav-23.appspot.com/o/Portfolio%2Fscript.js?alt=media&token=b1c483f2-4044-45bf-b7ae-a75e7491051a"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
